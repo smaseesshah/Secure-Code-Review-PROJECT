@@ -11,7 +11,7 @@ Follow these steps to run the complete environment locally.
 Open your terminal in the root directory and run:
 
 ```bash
-pip install flask python-dotenv requests
+pip install -r requirements.txt
 ```
 
 ## Step 2: Configure Environment Variables

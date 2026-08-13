@@ -4,7 +4,7 @@ This directory contains the fully remediated version of the application (runs on
 
 ## 🛡️ Implemented Defenses
 1. **Parameterized SQL Queries:** Neutralized SQLi using SQLite tuple parameterization.
-2. **Context-Aware Encoding & Safe Sinks:** Replaced `.innerHTML` with `.textContent` to stop XSS.
+2. **Context-Aware Encoding & Safe Sinks:** Replaced `.innerHTML` with `.textContent` to stop XSS and Also add encoding using javascript he library.
 3. **Content Security Policy (CSP):** Configured strict HTTP headers to block inline scripts as a Layer-4 safety net.
 4. **Backend Authorization:** Added owner checks before executing deletion queries (IDOR fix).
 5. **Modern Hashing:** Upgraded to Werkzeug salted password hashing (PBKDF2).
