@@ -1,14 +1,4 @@
-# Methodology & Threat Model
-
-## Threat Model (STRIDE)
-To identify the attack surface, I modeled the application against standard threat categories:
-
-* **Spoofing:** Can a user act as someone else? *(Identified weak auth token handling).*
-* **Tampering:** Can a user modify data they shouldn't? *(Identified IDOR on task deletion).*
-* **Repudiation:** (Not in scope for this minimal lab).
-* **Information Disclosure:** Can a user view hidden data? *(Identified SQLi and Hardcoded Secrets).*
-* **Denial of Service:** Can a user crash the app? *(Identified missing rate limiting).*
-* **Elevation of Privilege:** Can a user gain admin rights? *(Identified XSS for session hijacking).*
+# Methodology
 
 ## Secure Code Review Approach
 My review process followed a "Source to Sink" tracking methodology:
