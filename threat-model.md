@@ -20,3 +20,5 @@ I evaluated the application against the STRIDE threat model:
 | **Information Disclosure**| Exposing sensitive data. | **SQL Injection (SQLi)** in the search bar allows attackers to dump the entire database. A **Hardcoded API Key** exposes third-party billing. |
 | **Denial of Service** | Taking the application offline. | Lack of rate limiting on the `/login` route allows brute-force attacks. |
 | **Elevation of Privilege**| Gaining higher access. | **Stored XSS** allows an attacker to execute scripts in another user's browser, potentially hijacking their session. |
+
+* 🔙 [Return to Global Documentation](../README.md)

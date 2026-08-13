@@ -17,3 +17,6 @@ Replaced MD5 with Flask's built-in `werkzeug.security` module. Passwords are now
 
 ## Retest Result
 ✅ **Fixed** - Hashes are now secure, unique, and computationally expensive to crack.
+
+
+* 🔙 [Return to Global Documentation](../README.md)

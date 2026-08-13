@@ -18,3 +18,6 @@ Replaced the f-string with a parameterized query:
 
 ## Retest Result
 ✅ **Fixed** - The database now correctly treats the input as literal text, neutralizing payloads.
+
+
+* 🔙 [Return to Global Documentation](../README.md)

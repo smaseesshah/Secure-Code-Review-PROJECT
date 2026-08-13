@@ -18,3 +18,5 @@ My review process followed a "Source to Sink" tracking methodology:
 3. **Identify Sinks:** Located dangerous execution points (e.g., `cursor.execute()`, `.innerHTML`).
 4. **Verify Mitigation:** Checked if the data was properly encoded, parameterized, or sanitized *before* hitting the sink. 
 5. **Defense in Depth:** Even where mitigations existed, I evaluated if architectural safety nets (like CSP) were present in case the primary mitigation failed.
+
+* 🔙 [Return to Global Documentation](../README.md)

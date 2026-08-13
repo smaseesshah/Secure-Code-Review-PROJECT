@@ -29,3 +29,5 @@ If a future developer ignores Level 2 and forgets Level 1, we need a server-side
 
 ## Retest Result
 ✅ **Fixed** - Payloads are now rendered safely as text via Level 2, and the CSP actively monitors the browser via Level 3.
+
+* 🔙 [Return to Global Documentation](../README.md)

@@ -13,3 +13,5 @@ The SQL Injection occurred because the developer tried to dynamically build a se
 
 ### 4. Defense in Depth is mandatory.
 Developers are human and will inevitably make mistakes. Relying solely on input sanitization for XSS is a losing battle. By implementing a strict Content Security Policy (CSP), the application gained a safety net that protects users *even when* a developer writes bad code.
+
+* 🔙 [Return to Global Documentation](../README.md)

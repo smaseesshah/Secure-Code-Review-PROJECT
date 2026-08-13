@@ -31,3 +31,6 @@ python run_lab.py
 ```
 
 A browser window will open automatically, allowing you to easily click between the vulnerable and secure apps.
+
+
+* 🔙 [Return to Global Documentation](../README.md)
