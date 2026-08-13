@@ -21,4 +21,4 @@ I evaluated the application against the STRIDE threat model:
 | **Denial of Service** | Taking the application offline. | Lack of rate limiting on the `/login` route allows brute-force attacks. |
 | **Elevation of Privilege**| Gaining higher access. | **Stored XSS** allows an attacker to execute scripts in another user's browser, potentially hijacking their session. |
 
-* 🔙 [Return to Global Documentation](../README.md)
+* 🔙 [Return to Global Documentation](README.md)
