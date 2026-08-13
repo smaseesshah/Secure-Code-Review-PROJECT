@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskVault - Task Details</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/dashboard.html" class="back-link">&larr; Back to Dashboard</a>
+        
+        <div class="task-header">
+            <h2 id="taskTitleDisplay">Loading Task...</h2>
+        </div>
+
+        <div class="comments-section">
+            <h3>Comments</h3>
+            <div id="commentsList" class="comments-list">
+                <!-- Populated via JavaScript -->
+            </div>
+
+            <form id="commentForm">
+                <input type="hidden" id="currentTaskId">
+                <textarea id="commentText" placeholder="Write a comment..." required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/he/1.2.0/he.min.js"></script>
+    <script src="/static/app.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const taskId = urlParams.get('id');
+        document.addEventListener('DOMContentLoaded', () => loadTaskDetails(taskId));
+    </script>
+</body>
+</html>

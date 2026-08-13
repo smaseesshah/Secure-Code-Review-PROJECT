@@ -1,0 +1,262 @@
+/* ==========================================================================
+   Base Styles & Reset
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8fafc; /* Soft modern gray/blue background */
+    color: #334155;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+    min-height: 100vh;
+}
+
+h2, h3 {
+    color: #0f172a;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #3730a3;
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+    margin: 2rem 0;
+}
+
+/* ==========================================================================
+   Layout Containers
+   ========================================================================== */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Make the dashboard wider than the login/register screens */
+.container.dashboard {
+    max-width: 700px;
+}
+
+/* ==========================================================================
+   Forms & Inputs
+   ========================================================================== */
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #0f172a;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+button {
+    display: inline-block;
+    background-color: #4f46e5;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4338ca;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button.btn-logout {
+    background-color: #f1f5f9;
+    color: #475569;
+    width: auto;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+button.btn-logout:hover {
+    background-color: #e2e8f0;
+}
+
+button.btn-danger {
+    background-color: #fee2e2;
+    color: #dc2626;
+    width: auto;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.875rem;
+}
+
+button.btn-danger:hover {
+    background-color: #fca5a5;
+    color: #991b1b;
+}
+
+/* ==========================================================================
+   Dashboard Specifics
+   ========================================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+header h2 {
+    margin-bottom: 0;
+}
+
+.search-box {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.search-box input {
+    flex-grow: 1;
+}
+
+.search-box button {
+    width: auto;
+}
+
+/* Task List */
+.task-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.task-item:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.task-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+/* ==========================================================================
+   Task Details & Comments Specifics
+   ========================================================================== */
+.back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.back-link:hover {
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.task-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+.comments-section h3 {
+    margin-bottom: 1rem;
+}
+
+.comment-box {
+    background-color: #f1f5f9;
+    padding: 1rem;
+    border-radius: 0 8px 8px 8px;
+    border-left: 4px solid #4f46e5;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.comment-box strong {
+    color: #0f172a;
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+.message-box {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    min-height: 1.5rem; /* Prevents layout jump when message appears */
+}
+
+#createTaskForm {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#createTaskForm button {
+    width: auto;
+    white-space: nowrap;
+}
