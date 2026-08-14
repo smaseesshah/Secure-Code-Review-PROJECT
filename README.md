@@ -20,7 +20,33 @@ python run_lab.py
 
 ---
 
-## 📚 Documentation Map
+## � Application Screenshots
+
+These screenshots capture the key user flows and the vulnerable vs. fixed behaviors in the lab.
+
+### Main app views
+
+![Main Landing Page](./Screenshot/Main%20Landing%20Page.png)
+
+![Login Page](./Screenshot/Login%20Page.png)
+
+### Vulnerable vs. secure findings
+
+![SQLi in Vulnerable Version](./Screenshot/SQLi%20in%20Vulnerable%20Version.png)
+
+![SQLi Fixed in Secure Version](./Screenshot/SQLi%20Fixed%20in%20Secure%20Version.png)
+
+![XSS in Vulnerable App Version](./Screenshot/XSS%20in%20Vulnerable%20App%20Version.png)
+
+![XSS Fixes in Secure App Version](./Screenshot/XSS%20Fixes%20in%20Secure%20App%20Version.png)
+
+![IDOR in Vulnerable Version](./Screenshot/IDOR%20in%20Vulnerable%20Version.png)
+
+![IDOR Fixed in Secure Version](./Screenshot/IDOR%20Fixed%20in%20Secure%20Version.png)
+
+---
+
+## �📚 Documentation Map
 
 I have documented the entire lifecycle of finding, exploiting, and fixing these vulnerabilities. Explore the lab using the links below:
 

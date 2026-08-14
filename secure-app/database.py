@@ -10,8 +10,7 @@ def get_db_connection():
 
 def search_tasks(search_term):
     """
-    VULNERABLE FUNCTION: SQL INJECTION
-    The search_term is concatenated directly into the query string.
+    VULNERABLE FUNCTION: SQL INJECTION is fixed now it uses prepared statements and is safe now from sqli
     """
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -39,3 +38,7 @@ def search_tasks(search_term):
         return []
     finally:
         conn.close()
+        
+        
+        
+        
